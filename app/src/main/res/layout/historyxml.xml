@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_margin="5dp"
+    android:id="@+id/M_History"
+    android:background="#2E7ED3">
+    <LinearLayout
+        android:layout_weight="1"
+        android:layout_width="wrap_content"
+        android:layout_height="110dp"
+        android:orientation="vertical"
+        android:gravity="center">
+        <TextView
+            android:textSize="15sp"
+            android:padding="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:text="DD-MM-YYYY"
+            android:textColor="#FFFFFF"
+            android:id="@+id/Date_Format"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_weight="1"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:textSize="15sp"
+            android:text="12:00pm"
+            android:textColor="#FFFFFF"
+            android:id="@+id/Time_Format"/>
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:padding="10dp"
+            android:textColor="#FFFFFF"
+            android:text="You Scored 10 out of 10"
+            android:textSize="17sp"
+           android:layout_marginTop="10dp"
+            android:layout_gravity="center_horizontal"
+            android:textAlignment="center"
+            android:id="@+id/ma_Score"/>
+    </LinearLayout>
+    <TextView
+        android:id="@+id/dele"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="1"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:background="@drawable/ic_baseline_cancel_24"
+        />
+
+</LinearLayout>
+</LinearLayout>

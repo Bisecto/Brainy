@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="ken.example.Brainy.English2015Questions"
+    android:background="@drawable/second">
+    <LinearLayout
+        android:layout_centerInParent="true"
+        android:layout_alignParentTop="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:id="@+id/ad">
+    <TextView
+        android:layout_toLeftOf="@id/Admin_Board"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#FFFFFF"
+        android:text="subject"
+        android:textSize="20sp"
+        android:id="@+id/subject"/>
+    <TextView
+
+        android:layout_marginLeft="5dp"
+        android:id="@+id/Admin_Board"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#FFFFFF"
+        android:text="Admin Board"
+        android:textSize="20sp"/>
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_margin="10dp"
+        android:id="@+id/relative1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ad"
+        android:layout_marginTop="5dp">
+
+        <EditText
+            android:id="@+id/Enter_Question"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Enter Your Question Here"
+            android:padding="10dp"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#B8B8B8" />
+
+        <EditText
+            android:id="@+id/Enter_First_Option"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/Enter_Question"
+            android:hint="Enter First Option"
+            android:padding="10dp"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#B8B8B8" />
+
+        <EditText
+            android:id="@+id/Enter_Second_Option"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/Enter_First_Option"
+            android:hint="Enter Second Option"
+            android:padding="10dp"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#B8B8B8" />
+
+        <EditText
+            android:id="@+id/Enter_Third_Option"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/Enter_Second_Option"
+            android:hint="Enter Third Option"
+            android:padding="10dp"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#B8B8B8" />
+
+        <EditText
+            android:id="@+id/Enter_Forth_Option"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/Enter_Third_Option"
+            android:hint="Enter Fourth Option"
+            android:padding="10dp"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#B8B8B8" />
+
+        <EditText
+            android:id="@+id/Enter_Correct_Option"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/Enter_Forth_Option"
+            android:hint="Correct Option"
+            android:padding="10dp"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#B8B8B8" />
+
+        <Button
+            android:id="@+id/Input"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/Enter_Correct_Option"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="11dp"
+            android:background="@drawable/round"
+            android:padding="10dp"
+            android:text="Input The Questions"
+            android:layout_centerInParent="true"
+            android:textSize="15sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/relative1"
+        android:layout_marginTop="5dp">
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/container"
+        android:orientation="vertical">
+
+    </LinearLayout>
+</ScrollView>
+    </RelativeLayout>
+
+</RelativeLayout>

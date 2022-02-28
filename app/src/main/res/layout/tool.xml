@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="182dp"
+    android:background="@color/colorPrimaryDark"
+    android:orientation="vertical"
+    android:gravity="bottom"
+    >
+<ImageView
+
+    android:layout_gravity="bottom"
+    android:layout_width="80dp"
+    android:layout_height="80dp"
+    android:background="@drawable/ic_baseline_person_24"/>
+    <TextView
+        android:gravity="bottom"
+        android:layout_gravity="bottom"
+        android:layout_marginLeft="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:textSize="30sp"
+        android:text="Okafor Goodluck"
+        />
+
+</LinearLayout>
